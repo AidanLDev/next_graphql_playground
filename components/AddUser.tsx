@@ -1,18 +1,8 @@
 "use client";
 
 import React from "react";
-import { gql, useMutation } from "@apollo/client";
-
-const ADD_USER_MUTATION = gql`
-  mutation AddUser($name: String!, $email: String!, $number: Int!) {
-    addUser(name: $name, email: $email, number: $number) {
-      id
-      name
-      email
-      number
-    }
-  }
-`;
+import { useMutation } from "@apollo/client";
+import { ADD_USER_MUTATION } from "@/graphql/mutations/users";
 
 export default function AddUser() {
   const [addUserMutation, { loading, error }] = useMutation(ADD_USER_MUTATION);

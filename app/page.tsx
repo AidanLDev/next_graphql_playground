@@ -1,5 +1,6 @@
 import AddUser from "@/components/AddUser";
 import HelloButton from "@/components/HelloButton";
+import ShowUsers from "@/components/ShowUsers";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <HelloButton />
           <AddUser />
+          <ShowUsers />
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">

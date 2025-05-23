@@ -5,14 +5,6 @@
 
 declare module "sst" {
   export interface Resource {
-    "GraphQLUsers": {
-      "name": string
-      "type": "sst.aws.Dynamo"
-    }
-    "MyWeb": {
-      "type": "sst.aws.Nextjs"
-      "url": string
-    }
   }
 }
 /// <reference path="sst-env.d.ts" />

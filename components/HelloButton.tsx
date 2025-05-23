@@ -1,13 +1,8 @@
-"use client"
+"use client";
 
 import React from "react";
-import { gql, useLazyQuery } from "@apollo/client";
-
-const HELLO_QUERY = gql`
-  query Hello {
-    hello
-  }
-`;
+import { useLazyQuery } from "@apollo/client";
+import { HELLO_QUERY } from "@/graphql/queries/hello";
 
 export default function HelloButton() {
   const [getHello, { loading, error, data }] = useLazyQuery(HELLO_QUERY);
