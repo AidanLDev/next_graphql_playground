@@ -5,12 +5,16 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
+    "sst:dev": "npx sst dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "ssdeploy": "npx sst deploy"
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
     "@apollo/server": "^4.12.1",
+    "@apollo/server-plugin-response-cache": "^4.1.4",
+    "@apollo/utils.keyvaluecache": "^4.0.0",
     "@as-integrations/next": "^3.2.0",
     "@aws-sdk/client-dynamodb": "^3.816.0",
     "@aws-sdk/lib-dynamodb": "^3.816.0",
